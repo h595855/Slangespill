@@ -5,12 +5,13 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 
-import javax.swing.JFrame;
 
-public class GamePanel extends JFrame implements ActionListener {
+import javax.swing.JPanel;
 
-	static final int SCREEN_WIDHT = 600;
-	static final int SCREEN_HEIGHT = 600;
+public class GamePanel extends JPanel implements ActionListener {
+
+	static final int SCREEN_WIDHT = 800;
+	static final int SCREEN_HEIGHT = 800;
 	static final int UNIT_SIZE = 25;
 	static final int GAME_UNITS = (SCREEN_WIDHT * SCREEN_HEIGHT) / UNIT_SIZE;
 	static final int DELAY = 75;
