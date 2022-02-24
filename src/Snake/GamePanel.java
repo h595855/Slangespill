@@ -19,8 +19,8 @@ public class GamePanel extends JPanel implements ActionListener {
 	final int y[] = new int[GAME_UNITS];
 	int bodyparts = 6;
 	int applesEaten;
-	int appleX;
-	int appleY;
+	int appleX = 0;
+	int appleY = 0;
 	char directions = 'R';
 	boolean running = false;
 	Timer timer;
@@ -76,8 +76,9 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	public void newApple() {
-		appleX = random.nextInt((int) (SCREEN_WIDHT / UNIT_SIZE)) * UNIT_SIZE;
-		appleY = random.nextInt((int) (SCREEN_HEIGHT / UNIT_SIZE)) * UNIT_SIZE;
+		appleX = random.nextInt((int)(SCREEN_WIDHT / UNIT_SIZE))*UNIT_SIZE;
+		appleY = random.nextInt((int)(SCREEN_HEIGHT / UNIT_SIZE)) * UNIT_SIZE;
+		
 	}
 
 	public void move() {
